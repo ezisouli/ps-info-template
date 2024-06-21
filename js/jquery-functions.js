@@ -395,6 +395,7 @@ $("document").ready(function () {
     }
   }
 
+  // ΚΩΔΙΚΑΣ ΓΙΑ ΑΝ ΔΙΚΑΙΟΥΤΑΙ ΤΟ ΔΕΛΤΙΟ
   function submitForm() {
     const resultWrapper = document.createElement("div");
     const titleText =
@@ -427,6 +428,7 @@ $("document").ready(function () {
           $('input[name="question-option"]:checked')
         ) + 1;
       console.log(selectedRadioButtonIndex);
+      // εδω ερωτησεις currentQuestion  ειναι το id της ερωτησεις και selectedRadioButtonIndex ποια η απαντηση του χρηστη για να τερματησει -ΔΕΝ ΤΟ ΔΙΚΑΙΟΥΤΑΙ
       if (currentQuestion === 0 && selectedRadioButtonIndex === 3) {
         currentQuestion = -1;
         currentLanguage === "greek" ? skipToEnd("Μπορείτε να το εκδώσετε ξανά μόνο μια φορά μετά από απώλεια.") : skipToEnd("You can reissue it only one time after loss.");
