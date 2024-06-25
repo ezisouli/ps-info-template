@@ -89,6 +89,33 @@ html, body
   .serviceTitle{
     text-align: center;
   }
+
+  /*accesibility button*/
+  body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast a {
+    color: #ff0;
+}
+
+body.large-font {
+    font-size: 1.2em;
+}
+body.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast a {
+  color: #ff0;
+}
+
+body.large-font {
+  font-size: 1.2em;
+}
+
 }
 
 
